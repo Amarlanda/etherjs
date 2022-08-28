@@ -1,6 +1,10 @@
+const dotenv = require("dotenv");
+
+dotenv.config();
+
 const { ethers } = require("ethers");
 
-const INFURA_ID = "ab7376e95c9b4e2eb2c0657c12a32bcf";
+const INFURA_ID = (process.env.INFURA_ID || "").trim();
 const provider = new ethers.providers.JsonRpcProvider(
  `https://mainnet.infura.io/v3/${INFURA_ID}`
 );
