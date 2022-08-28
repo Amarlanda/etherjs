@@ -1,0 +1,9 @@
+{
+ "name": "@ethers_examples/repo1",
+ "version": "0.0.0",
+ "main": "1_accounts.js",
+ "license": "MIT",
+ "devDependencies": {
+  "lerna": "^5.4.3"
+ }
+}
